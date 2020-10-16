@@ -5,24 +5,38 @@ body{
 .grid {
     display: grid;
     height: 100vh;
-    grid-template-areas: 
-    ". . . . . . a1 a1 . . ."
-    ". . . . . a2 a2 a3 a3 . ."
-    ". . . . a4 a5 a6 . . . ."
-    ". . . a7 a8 . . a9 a9 a10 a10"
-    ". . a11 a12 a13 a14 a14 a15 a16 . ."
-    ". a17 a17 a17 a18 a18 a19 a19 a20 a20"
-    "a21 a22 a23 a23 a23 a23 a23 a23 a23 a24 ."
-    "a25 a25 a25 . . a26 a26 a27 a27 . ."
-    ". . a28 a29 a30 a31 a32 a33 . . ."
-    ". . . a34 a35 . . . . . ."
+    width:100vh;
+    grid-template-areas:    
+    ". . . . . . a1 a1 . . ."  
+    ". . . . . a2 a2 a3 a3 . ."    
+    ". . . . a4 a5 a6 . . . ."    
+    ". . . a7 a8 . . a9 a9 a10 a10"    
+    ". . a11 a12 a13 a14 a14 a15 a16 . ."    
+    ". . a17 a17 a17 a18 a18 a19 a19 a20 a20"   
+    "a21 a22 a23 a23 a23 a23 a23 a23 a23 a24 ."    
+    "a25 a25 a25 . . a26 a26 a27 a27 . ."    
+    ". . a28 a29 a30 a31 a32 a33 . . ."   
+    ". . . a34 a35 . . . . . ."    
     ". . . . a36 a37 . . . . .";
+    grid-template-columns: repeat (11,1fr);
+    grid-template-rows: repeat (11,1fr);
+    transform:rotate(-45deg) ;
+    -webkit-transform:rotate(-45deg) ;
+    -moz-transform:rotate(-45deg) ;
+    -ms-transform:rotate(-45deg) ;
+    -o-transform:rotate(-45deg) ;
 }
 .grid_item {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.item1,.item5,.item6,.item9,.item12,.item13,.item15,.item16,.item24,.item25,.item34,.item26,.item35{
+    background-color: black;
+}
+.item
+
 .item1 {
 
 grid-area: a1}
