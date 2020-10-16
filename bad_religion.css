@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    padding:1rem;
+    width: 600px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+            "header    header"
+            "bad      empty"
+            "religion  religion";
+    grid-template-rows: 15vh 50vh 35vh; /*fr unidad relativa de medida grid*/
+    grid-template-columns: minmax(20rem,2fr) minmax(10rem,1fr);/*El minmax ahce scroll al primer valor si ajustamos tamaño de pantalla*/
+    background-color: #DDE1D4;
+    gap:1rem;
+}
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    grid-area:header;
+    background-color: black;
+    color:white;
+}
+.bad {
+    grid-area: bad;
+    background-color:#E64036;
+}
+.empty {
+   grid-area: empty;
+    background-color:#E64036;
+}
+.religion {
+    grid-area: religion;
+    background-color:#E64036;
+}
